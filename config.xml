@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuracion>
+  
+  <!-- Sección de configuración de la Base de Datos -->
+  <baseDeDatos>
+    <!-- Dirección del host de la base de datos -->
+    <host>localhost</host>
+    
+    <!-- Puerto en el que escucha la base de datos -->
+    <puerto>5432</puerto>
+    
+    <!-- Nombre de la base de datos -->
+    <nombre>base_de_datos_prueba</nombre>
+    
+    <!-- Usuario para acceder a la base de datos -->
+    <usuario>admin</usuario>
+    
+    <!-- Contraseña para el usuario de la base de datos -->
+    <contraseña>admin</contraseña>
+  </baseDeDatos>
+  
+  <!-- Sección de configuración del Servidor Web -->
+  <servidorWeb>
+    <!-- Puerto en el que el servidor web escucha -->
+    <puerto>8080</puerto>
+    
+    <!-- Habilitar o deshabilitar SSL (true/false) -->
+    <sslHabilitado>true</sslHabilitado>
+    
+    <!-- Ruta al archivo de clave privada para SSL -->
+    <rutaClavePrivada>/ruta/al/archivo/clavePrivada.pem</rutaClavePrivada>
+    
+    <!-- Ruta al archivo de certificado para SSL -->
+    <rutaCertificado>/ruta/al/archivo/certificado.pem</rutaCertificado>
+    
+    <!-- Número máximo de conexiones simultáneas permitidas -->
+    <maxConexiones>100</maxConexiones>
+    
+    <!-- Tiempo de espera de la conexión en milisegundos -->
+    <tiempoEspera>300</tiempoEspera>
+  </servidorWeb>
+  
+  <!-- Sección de configuración de Logging -->
+  <logging>
+    <!-- Nivel de log (info, error, debug) -->
+    <nivel>info</nivel>
+    
+    <!-- Ruta al archivo donde se almacenarán los logs -->
+    <rutaArchivo>/ruta/al/archivo/logs/app.log</rutaArchivo>
+  </logging>
+  
+</configuracion>
